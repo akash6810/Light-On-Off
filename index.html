@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS for adjusting the image size */
+        img#myImage {
+            width: 200px;
+            /* Adjust the width as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        /* CSS for styling the buttons and heading */
+        .main-heading {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #ffd943;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ae9d29;
+        }
+
+        /* Background color for the entire document */
+        body {
+            background-color: #fb9b9b;
+            /* Set your desired background color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-heading">
+        <h1>Can you turn the light on?</h1>
+        <button onclick="document.getElementById('myImage').src='ON.png' ">Turn On The Light</button>
+        <img src="OFF.png" alt="LightOffPic" id="myImage">
+        <button onclick="document.getElementById('myImage').src='OFF.png' ">Turn Off The Light</button>
+
+
+    </div>
+</body>
+
+</html>
